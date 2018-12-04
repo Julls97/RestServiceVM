@@ -1,8 +1,8 @@
 package jull.restservice.repository;
 
-import jull.restservice.entity.Location;
+import jull.restservice.entity.Message;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface LocationRepository extends CrudRepository<Location, Long> { }
+public interface MessageRepository extends CrudRepository<Message, Long> {}

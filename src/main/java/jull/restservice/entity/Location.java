@@ -2,6 +2,7 @@ package jull.restservice.entity;
 
 import jull.restservice.entity.enums.LocationEnum;
 import org.hibernate.annotations.GenericGenerator;
+
 import javax.persistence.*;
 
 @Entity
@@ -10,7 +11,7 @@ public class Location {
 	@Id
 	@GeneratedValue(generator = "increment")
 	@GenericGenerator(name= "increment", strategy= "increment")
-	@Column(name = "locationId", length = 10, nullable = false)
+	@Column(name = "location_id", length = 10, nullable = false)
 	private long locationId;
 	@Column(name = "description")
 	private String description;

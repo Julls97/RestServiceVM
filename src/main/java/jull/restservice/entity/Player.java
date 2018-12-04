@@ -2,6 +2,7 @@ package jull.restservice.entity;
 
 import jull.restservice.entity.enums.PlayerEnum;
 import org.hibernate.annotations.GenericGenerator;
+
 import javax.persistence.*;
 
 @Entity
@@ -22,7 +23,6 @@ public class Player {
 	@Column(name = "level")
 	private int level;
 	@Column(name = "position_id")
-//	private Location position;
 	private long positionId;
 	
 	public Player() {}
@@ -33,7 +33,6 @@ public class Player {
 		this.playerClass = playerClass;
 		this.email = email;
 		this.level = level;
-//		this.position = position;
 		this.positionId = positionId;
 	}
 	
@@ -80,13 +79,6 @@ public class Player {
 	public long getPositionId() { return positionId; }
 	
 	public void setPositionId(long positionId) { this.positionId = positionId; }
-	//	public Location getPosition() {
-//		return position;
-//	}
-	
-//	public void setPosition(Location position) {
-//		this.position = position;
-//	}
 	
 	@Override
 	public String toString() {

@@ -13,7 +13,10 @@ public class LocationServiceImpl implements LocationService {
 	private LocationRepository locationRepository;
 	
 	@Override
-	public Location addLocation(Location location) { return locationRepository.save(location); }
+	public Location addLocation(Location location) {
+		Location savedLocation = locationRepository.save(location);
+		return savedLocation;
+	}
 	
 	@Override
 	public void delete(long id) { locationRepository.delete(id); }
